@@ -11,6 +11,8 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 .root {
@@ -70,7 +72,7 @@ input[type="color"]::-webkit-color-swatch {
   .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 28vw;
+    width: 27vw;
     height: 4px;
     outline: none;
     background: rgb(236, 235, 235);
@@ -156,6 +158,12 @@ label {
 }
 
 @media (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .text-wrap {
     padding-top: 16px;
     padding-left: 16px;
@@ -198,7 +206,7 @@ label {
   .icon-wrap {
     position: absolute;
     bottom: -20px;
-    right: 30px;
+    right: 16px;
     z-index: 999;
   }
 
@@ -260,7 +268,7 @@ label {
 @media (max-width: 1024px) {
   .color-wrap {
     position: absolute;
-    top: 42%;
+    top: 50%;
   }
 
   .colorbox {
