@@ -172,11 +172,11 @@ label {
   }
 
   .first-color {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   #logo_1 {
@@ -196,9 +196,9 @@ label {
 
   .symbol {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 16px;
     color: black;
   }
@@ -268,12 +268,12 @@ label {
 @media (max-width: 1024px) {
   .color-wrap {
     position: absolute;
-    bottom: 0;
+    top: 42%;
   }
 
   .colorbox {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     font-size: 0;
     background-color: var(--color3);
@@ -366,7 +366,7 @@ label {
   }
 
   .phrase {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
   }
