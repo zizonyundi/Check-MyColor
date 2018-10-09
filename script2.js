@@ -99,11 +99,11 @@ window.onload = function() {
   }
 
   inputs.forEach(input => input.addEventListener("change", colorUpdate));
-  inputs.forEach(input => input.addEventListener("mousemove", colorUpdate));
+  inputs.forEach(input => input.addEventListener("input", colorUpdate));
   inputs.forEach(input => input.addEventListener("change", rgbToHex));
-  inputs.forEach(input => input.addEventListener("mousemove", rgbToHex));
+  inputs.forEach(input => input.addEventListener("input", rgbToHex));
   inputs.forEach(input => input.addEventListener("change", rgbToNumber));
-  inputs.forEach(input => input.addEventListener("mousemove", rgbToNumber));
+  inputs.forEach(input => input.addEventListener("input", rgbToNumber));
 };
 
 /*
