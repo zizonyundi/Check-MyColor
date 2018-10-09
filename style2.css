@@ -9,6 +9,11 @@
   --margin2: 0 0 0 2.222222%;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
