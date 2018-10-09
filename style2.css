@@ -273,7 +273,7 @@ label {
 
   .colorbox {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
     font-size: 0;
     background-color: var(--color3);
