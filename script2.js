@@ -13,6 +13,8 @@ window.onload = function() {
   const icon3 = document.querySelector(".icon-wrap #icon-3");
   const icon4 = document.querySelector(".icon-wrap #icon-4");
 
+  //패턴 변경 코드
+
   icon1.addEventListener("click", patternChange1);
   function patternChange1() {
     document.documentElement.style.setProperty(`--width`, `12%`);
@@ -52,6 +54,7 @@ window.onload = function() {
     document.documentElement.style.setProperty(`--color3`, `black`);
   }
 
+  //슬라이더의 값을 css의 rgb값으로 적용
   function colorUpdate() {
     document.documentElement.style.setProperty(
       `--color1`,
@@ -64,6 +67,7 @@ window.onload = function() {
     );
   }
 
+  //rgb 각각의 값을 css p태그에 적용
   function rgbToNumber() {
     document.getElementById("num-r1").innerHTML = "R " + r1.value;
     document.getElementById("num-g1").innerHTML = "G " + g1.value;
@@ -73,6 +77,7 @@ window.onload = function() {
     document.getElementById("num-b2").innerHTML = "B " + b2.value;
   }
 
+  //rgb값을 hex코드로 변환
   function rgbToHex() {
     var toHex = function(string) {
       string = parseInt(string, 10).toString(16);
@@ -98,6 +103,7 @@ window.onload = function() {
     return hexType1, hexType2;
   }
 
+  //mousemove로 하면 모바일에서 안먹음 -> input으로 변경
   inputs.forEach(input => input.addEventListener("change", colorUpdate));
   inputs.forEach(input => input.addEventListener("input", colorUpdate));
   inputs.forEach(input => input.addEventListener("change", rgbToHex));
