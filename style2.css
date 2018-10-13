@@ -44,6 +44,8 @@ body {
 div[class*="range"] {
   padding-right: 12px;
 }
+
+/* 슬라이더가 기본으로 가지고 있는 스타일 리셋*/
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -76,7 +78,6 @@ input[type="color"]::-webkit-color-swatch {
     height: 4px;
     outline: none;
     background: rgb(236, 235, 235);
-    cursor: pointer;
     display: block;
     margin-top: 10px;
   }
@@ -101,7 +102,6 @@ input[type="color"]::-webkit-color-swatch {
   padding-left: 40px;
   display: flex;
   justify-content: flex-start;
-  position: relative;
 }
 
 .first-color {
@@ -122,11 +122,6 @@ input[type="color"]::-webkit-color-swatch {
   margin-right: -16px;
 }
 
-label {
-  font-size: 16px;
-  display: inline;
-}
-
 .symbol {
   font-weight: 700;
   font-size: 20px;
@@ -134,14 +129,14 @@ label {
   top: 30px;
   right: 30px;
   color: black;
-  z-index: 998;
+  z-index: 999;
 }
 
 .icon-wrap {
   position: absolute;
   top: -48px;
   right: 30px;
-  z-index: 999;
+  z-index: 998;
 }
 
 .icon-wrap img {
@@ -316,6 +311,7 @@ label {
   line-height: 1.2;
 }
 
+/* 드래그 영역 컬러 지정 */
 .phrase::-moz-selection {
   background-color: var(--color1);
   color: white;
