@@ -78,6 +78,7 @@ window.onload = function() {
   }
 
   //rgb값을 hex코드로 변환
+  //#rrggbb
   function rgbToHex() {
     var toHex = function(string) {
       string = parseInt(string, 10).toString(16);
@@ -93,7 +94,7 @@ window.onload = function() {
     var r2hex = toHex(r2.value);
     var g2hex = toHex(g2.value);
     var b2hex = toHex(b2.value);
-
+    //#rrggbb
     var hexType1 = r1hex + g1hex + b1hex;
     var hexType2 = r2hex + g2hex + b2hex;
 
